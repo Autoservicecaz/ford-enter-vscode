@@ -1,0 +1,137 @@
+/*=================================Zerando estilos=================================*/
+* {/*zera todas as margens, padings e retira decoraçao de textps*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*=================================Cabeçalho=================================*/
+
+body {/*poe o corpo da pagina com fonte arial-san serif, retira as margens e os padings*/
+    height: 100vh;
+    box-sizing: border-box; /*garante que todos elementos fiquem dentro da delimitação do body*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+/* ===============================class do cabeçlho==========================*/
+.header{/*textos do header home e lancamentos no centro margens 0 e espaços de 10px*/
+    text-align: center;
+    margin: 0;
+    padding: 10px;   
+}
+.header__nav{/*poe margens 0 e espaços internos de 15px ao menu home e lancamentos*/
+    margin: 0;
+    font-size: 25px;    
+}
+.header__img{/*poe imagens display flexivel e justificado a esquerda*/
+    display: flex;
+    justify-content: left;
+}
+
+
+/*=================================Corpo da pagina=================================*/
+
+main{ /*========Elementos flex na tela, em colunas comum alinhado ao centro=========*/
+    display: flex;
+    flex-direction: column;/*todos elementos na mesma coluna*/
+    align-items: center;
+    margin: 15px;
+}
+/* ===============================class do main==========================*/
+.main__p{/*define que os textos ficaram no centro, com margens 0 e pading de 5px, na cor azul*/ 
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 5px; 
+    color: #1b357a; 
+}
+.cotainer{/*=====================Alinha elementos ao centro=========================*/
+    text-align: center;
+}
+.table{/*=======Elementos flexiveis na tela justificados e alinahdos no centro=======*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__link{/*Margem 0, elementos flexiveis na tela, alinahdo e justificado ao centro, ocupndo toda largura da tela com espaços internos de 5px*/
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 5px;
+}
+.main__comparacao{/*====Largura de 600px, delita os elementos em uma caixa sem sair do container*/
+    width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+.main__comparacao__radio{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+.main__comparacao__info{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+.main__comparacao__colunas{
+    display: flex;
+    flex-direction: column;/*todos elementos na mesma coluna*/
+    
+}
+
+/*=================================Rodapé=================================*/
+footer{  
+    background-color:#1b357a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    
+   
+}
+.redesSociais{
+    margin: 0 5px;
+    padding: 0 5px;  
+
+}
+.redesSociais__h5{
+    display: flex;
+    justify-content: flex-start;
+    float: inline-start;
+}
+.redesSociais__logorodape{
+    display: flex;
+    justify-content: right;
+    float: inline-end;   
+}
+.corcorpy{
+    color: aliceblue;
+    margin: 0 5px;
+    padding: 5px;
+}
+.botao{
+    background-color: #1251d8;
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.botao:active{
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+}
