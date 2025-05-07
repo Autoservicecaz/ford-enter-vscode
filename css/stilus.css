@@ -76,6 +76,7 @@ main{ /*========Elementos flex na tela, em colunas comum alinhado ao centro=====
     height: 30px;
     padding: 5px;
     margin: 5px;
+    
 }
 .main__comparacao__info{
     width: 30px;
