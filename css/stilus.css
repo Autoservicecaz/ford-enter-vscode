@@ -12,7 +12,7 @@ body {/*poe o corpo da pagina com fonte arial-san serif, retira as margens e os 
     box-sizing: border-box; /*garante que todos elementos fiquem dentro da delimitação do body*/
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px;
   }
 /* ===============================class do cabeçlho==========================*/
 .header{/*textos do header home e lancamentos no centro margens 0 e espaços de 10px*/
@@ -21,8 +21,10 @@ body {/*poe o corpo da pagina com fonte arial-san serif, retira as margens e os 
     padding: 10px;   
 }
 .header__nav{/*poe margens 0 e espaços internos de 15px ao menu home e lancamentos*/
-    margin: 0;
-    font-size: 25px;    
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;  
+
 }
 .header__img{/*poe imagens display flexivel e justificado a esquerda*/
     display: flex;
@@ -37,6 +39,41 @@ main{ /*========Elementos flex na tela, em colunas comum alinhado ao centro=====
     flex-direction: column;/*todos elementos na mesma coluna*/
     align-items: center;
     margin: 15px;
+}
+input{
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 5px;
+    width: 250px;
+    height: 35px;
+}
+fieldset{ 
+    margin: 5px;
+    padding: 5px;
+}
+legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+select{
+    border-radius: 7px;
+    border-color: #666;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 35px;
+}
+textarea{
+    border-radius: 5px;
+    border-color: #666;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
 }
 /* ===============================class do main==========================*/
 .main__p{/*define que os textos ficaram no centro, com margens 0 e pading de 5px, na cor azul*/ 
@@ -63,7 +100,7 @@ main{ /*========Elementos flex na tela, em colunas comum alinhado ao centro=====
     padding: 0 5px;
 }
 .main__comparacao{/*====Largura de 600px, delita os elementos em uma caixa sem sair do container*/
-    width: 600px;
+    width: 40rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -86,10 +123,51 @@ main{ /*========Elementos flex na tela, em colunas comum alinhado ao centro=====
 }
 .main__comparacao__colunas{
     display: flex;
-    flex-direction: column;/*todos elementos na mesma coluna*/
-    
+    flex-direction: column;/*todos elementos na mesma coluna*/ 
+}
+.botao{
+    background-color: #1251d8;
+    border-radius: 7px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.botao:active{
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
 }
 
+.botao__form{
+    background-color: #1251d8;
+    border-radius: 7px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: aliceblue;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    float: inline-end;  
+        
+}
+.botao__form:active{
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+}
+
+.main__contato{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
 /*=================================Rodapé=================================*/
 footer{  
     background-color:#1b357a;
@@ -98,7 +176,6 @@ footer{
     padding: 15px;
     color: white;
     
-   
 }
 .redesSociais{
     margin: 0 5px;
@@ -119,20 +196,4 @@ footer{
     color: aliceblue;
     margin: 0 5px;
     padding: 5px;
-}
-.botao{
-    background-color: #1251d8;
-    border-radius: 8px;
-    border: none;
-    width: 150px;
-    height: 30px;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.botao:active{
-    box-shadow: 0 3px #666;
-    transform: translateY(3px);
 }
