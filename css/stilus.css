@@ -18,12 +18,14 @@ body {/*poe o corpo da pagina com fonte arial-san serif, retira as margens e os 
 .header{/*textos do header home e lancamentos no centro margens 0 e espaços de 10px*/
     text-align: center;
     margin: 0;
-    padding: 10px;   
+    
 }
 .header__nav{/*poe margens 0 e espaços internos de 15px ao menu home e lancamentos*/
-    margin-left: 10px;
-    margin-right: 10px;
     font-size: 25px;  
+    a{
+        padding: 5px;
+        margin: 5px;
+    }
 
 }
 .header__img{/*poe imagens display flexivel e justificado a esquerda*/
@@ -39,15 +41,21 @@ main{ /*========Elementos flex na tela, em colunas comum alinhado ao centro=====
     flex-direction: column;/*todos elementos na mesma coluna*/
     align-items: center;
     margin: 15px;
+    box-sizing: border-box;
+    padding-bottom: 8rem;
 }
+
 input{
     border-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     margin: 5px;
     width: 250px;
-    height: 35px;
+    height: 20px;
+    padding: 5px;
+    font-style: italic;
 }
+
 fieldset{ 
     margin: 5px;
     padding: 5px;
@@ -65,12 +73,16 @@ select{
     padding: 5px;
     width: 250px;
     height: 35px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 textarea{
     border-radius: 5px;
     border-color: #666;
-    font-size: 15px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
     margin: 5px;
     padding: 5px;
     width: 250px;
@@ -165,8 +177,7 @@ textarea{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-self: center;
-    
+    align-self: center;   
 }
 /*=================================Rodapé=================================*/
 footer{  
@@ -175,6 +186,10 @@ footer{
     margin: 0;
     padding: 15px;
     color: white;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     
 }
 .redesSociais{
@@ -190,7 +205,9 @@ footer{
 .redesSociais__logorodape{
     display: flex;
     justify-content: right;
-    float: inline-end;   
+    float: inline-end;
+    padding: 20px;
+    margin: 0 40px; 
 }
 .corcorpy{
     color: aliceblue;
