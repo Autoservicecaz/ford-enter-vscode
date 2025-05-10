@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ford Motors - Lacamentos</title>
     <link rel="stylesheet" href="css/stilus.css">
 </head>
 <body>
     <header class="header">
-        <a href="index.html" ><img class="header__img" src="img/logo-ford-256.png" alt="Logomarca da ford" ></a>
+        <img class="header__img" src="img/logo-ford-256.png" alt="Logomarca da ford" >
         <nav class="header__nav">    
             <a href="index.html">Home</a>
             <a href="lancamento.html">Lancamentos</a>
@@ -18,38 +18,31 @@
     <main>
         <div class="cotainer"> 
             <iframe width="1152px" height="600px" src="https://www.youtube.com/embed/vQsryuNmsL0?si=17UYRuQR-Kkd5Wbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-                <div class="main__comparacao">
-                       
-                    <div>
-                        <img src="img/XL Cabine.jpg" alt="Ranger Cabine simples"/>
-                        <div class="main__comparacao">
-                            <input class="main__comparacao__radio" type="checkbox" id="csimples" name="cabinesimples" value="cabinesimples">
-                            <label for="csimples"><a href="#">Ford Ranger cabine simples</a><br>Diesel 4x4 2022</label> 
-                            <img class="main__comparacao__info" src="img/info.png" alt="informacao">
-                        </div>
-                    </div>                            
-                      
+        </div>               
+        
+                
+            <table class="main__comparacao">
+                <tr>
+                    <td  colspan="3"><img width="100%" height="100%" src="img/XL Cabine.jpg" alt="XL Cabine simples 2.2 Diesel"/></td>
+                    <td  colspan="3"><img width="100%" height="100%" src="img/xls 2.2 diesel.jpg" alt="Ranger cabine dupla diesel"/></td>
+                    <td  colspan="3"><img width="100%" height="100%" src="img/storm.jpg" alt="Ranger storn"/></td>
+                </tr>
+                
+                <tr>    
+                    <td ><input class="main__comparacao__radio" type="checkbox" id="csimples" name="cabinesimples" value="cabinesimples"></td>
+                    <td><label for="csimples"><a href="#">XL Cabine Simples 2.2 Manual</a><br>Diesel 4x4 2022</label></td>
+                    <td ><img class="main__comparacao__info" src="img/info.png" alt="informacao"></td>
                     
-                    <div>
-                        <img src="img/xls 2.2 diesel.jpg" alt="Ranger cabine dupla diesel"/>    
-                        <div class="main__comparacao">
-                            <input class="main__comparacao__radio" type="checkbox" id="diesel" name="cabinedupladiesel" value="cabinedupladiesel">
-                            <label for="diesel"><a href="#">Ford Ranger xls</a> <br>3.0 Diesel 4x4 2022</label> 
-                            <img class="main__comparacao__info" src="img/info.png" alt="informacao">
-                        </div>      
-                    </div>    
-                        
+                    <td><input class="main__comparacao__radio" type="checkbox" id="diesel" name="cabinedupladiesel" value="cabinedupladiesel"></td>
+                    <td><label for="diesel"><a href="#">XLS Cabine Dupla 2.2 Automatica</a> <br>Diesel 4x4 2022</label></td>
+                    <td><img class="main__comparacao__info" src="img/info.png" alt="informacao"></td>
                     
-                    <div>
-                        <img src="img/storm.jpg" alt="Ranger storn"/>
-                        <div class="main__comparacao">
-                            <input class="main__comparacao__radio" type="checkbox" id="storm" name="rangerstorne" value="rangerstorne">    
-                            <label for="storn"><a href="#">Ford Ranger Storn</a><br>3.2 Diesel 4x4 2022</label>
-                            <img class="main__comparacao__info" src="img/info.png" alt="informacao">
-                        </div>
-                    </div>
-                </div>
+                    <td><input class="main__comparacao__radio" type="checkbox" id="storm" name="rangerstorne" value="rangerstorne"></td>
+                    <td><label for="storn"><a href="#">Ford Ranger Storn 3.2 Automatica</a><br>Diesel 4x4 2022</label></td> 
+                    <td><img class="main__comparacao__info" src="img/info.png" alt="informacao"></td>
+                </tr>                                            
+            </table>
+        
         <button class="botao">Comparar</button>
     
     </main>
