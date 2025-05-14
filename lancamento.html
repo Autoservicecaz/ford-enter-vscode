@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head index.html, lancamento.html, contato.html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford Motors - Lacamentos</title>
     <link rel="stylesheet" href="css/stilus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img class="header__img" width="13%" height="13%" src="img/logo-ford-256.png" alt="Logomarca da ford" >
+    <header >
+        <div class="header">
+        <img class="header__img" src="img/logo-ford-256.png" alt="Logomarca da ford" >
+        </div>
         <nav class="header__nav">    
             <a href="index.html">Home</a>
             <a href="lancamento.html">Lancamentos</a>
@@ -17,11 +20,11 @@
     </header>
     <main>
         <div class="cotainer"> 
-            <iframe width="1152rem" height="600rem" src="https://www.youtube.com/embed/vQsryuNmsL0?si=17UYRuQR-Kkd5Wbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/vQsryuNmsL0?si=17UYRuQR-Kkd5Wbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>               
             <table class="main__comparacao">
                 <tr>
-                    <td  colspan="3"><img width="110%" height="110%" src="img/XL Cabine.jpg" alt="XL Cabine simples 2.2 Diesel"/></td>
+                    <td  colspan="3"><img width="103%" height="103%" src="img/XL Cabine.jpg" alt="XL Cabine simples 2.2 Diesel"/></td>
                     <td  colspan="3"><img width="100%" height="100%" src="img/xls 2.2 diesel.jpg" alt="Ranger cabine dupla diesel"/></td>
                     <td  colspan="3"><img width="100%" height="100%" src="img/storm.jpg" alt="Ranger storn"/></td>
                 </tr>
@@ -42,17 +45,15 @@
             </table>
         <button class="botao">Comparar</button>
     </main>
-    <footer>
+    <footer class="footer"> 
         <div class="redesSociais">
-            <table>
-                <td><h5 class="redesSociais__h5">Redes Sociais</h5></td>
-                <td><a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img/facebook-50.png" alt="Facebook"/></a></td>
-                <td><a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img/instagram-logo-50.png" alt="instagran"/></a></td>
-                <td><a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img/youtube-squared-50.png" alt="youtube"/></a></td>
-                <td><div class><a href="https://www.ford.com.br/copyright/" target="_blank"><h4 class="corcorpy">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</h4></a></div></td>
-                <td><div><img class="redesSociais__logorodape" src="img/ford-96.png" alt="logo da ford"/></td></div>   
-            </table>       
+            <h5>Redes Sociais</h5>
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img/facebook-50.png" alt="Facebook"/></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img/instagram-logo-50.png" alt="instagran"/></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img/youtube-squared-50.png" alt="youtube"/></a>
         </div>
+        <div><a href="https://www.ford.com.br/copyright/" target="_blank"><h4 class="corcorpy">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</h4></a></div>
+        <div><img class="redesSociais__logorodape" src="img/ford-96.png" alt="logo da ford"/></div>   
     </footer>
 </body>
 </html>
